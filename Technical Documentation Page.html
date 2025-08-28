@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Documentation</title>
+    <link rel="stylesheet" href="stylez.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>CSS Flexbox Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Flex_Container">Flex Container</a>
+        <a class="nav-link" href="#Flex_Items">Flex Items</a>
+        <a class="nav-link" href="#Justify_Content">Justify Content</a>
+        <a class="nav-link" href="#Align_Items">Align Items</a>
+    </nav>
+    
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>CSS Flexbox is a layout model designed to distribute space along a single axis efficiently.</p>
+            <p>It allows elements to align dynamically, making responsive design easier.</p>
+            <p>Flexbox simplifies alignment issues and eliminates the need for complex float-based layouts.</p>
+        </section>
+        
+        <section class="main-section" id="Flex_Container">
+            <header>Flex Container</header>
+            <p>To use Flexbox, you need to define a flex container:</p>
+            <code>display: flex;</code>
+            <p>This enables flex properties for child elements.</p>
+            <p>The flex container can be further customized with properties like <code>flex-direction</code> and <code>flex-wrap</code>.</p>
+        </section>
+        
+        <section class="main-section" id="Flex_Items">
+            <header>Flex Items</header>
+            <p>Items inside a flex container automatically become flex items.</p>
+            <p>Properties like <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code> help control item sizing.</p>
+            <p>Flex items respect the order set by <code>order</code> property, allowing rearrangement without changing HTML structure.</p>
+        </section>
+        
+        <section class="main-section" id="Justify_Content">
+            <header>Justify Content</header>
+            <p>Controls horizontal alignment of flex items:</p>
+            <ul>
+                <li><code>justify-content: flex-start;</code></li>
+                <li><code>justify-content: center;</code></li>
+                <li><code>justify-content: space-between;</code></li>
+            </ul>
+            <p>Using <code>justify-content</code>, elements can be positioned dynamically for better spacing.</p>
+        </section>
+        
+        <section class="main-section" id="Align_Items">
+            <header>Align Items</header>
+            <p>Controls vertical alignment:</p>
+            <ul>
+                <li><code>align-items: flex-start;</code></li>
+                <li><code>align-items: center;</code></li>
+                <li><code>align-items: stretch;</code></li>
+            </ul>
+            <p>It works together with <code>align-self</code> to override individual item alignment.</p>
+        </section>
+    </main>
+</body>
+</html>
